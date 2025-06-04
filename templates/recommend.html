@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommend Books</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            padding: 20px;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        nav {
+            background: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .form-container {
+            max-width: 500px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            background: #333;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .form-container button:hover {
+            background: #555;
+        }
+
+        .recommendations {
+            margin-top: 30px;
+        }
+
+        .book-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .book-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            width: 180px;
+            text-align: center;
+        }
+
+        .book-card img {
+            width: 100px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .book-title {
+            font-weight: bold;
+            font-size: 16px;
+            margin: 10px 0 5px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .book-author {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .no-recommendations {
+            text-align: center;
+            color: #555;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div>My Book Recommender</div>
+        <div>
+            <a href="/">Home</a>
+            <a href="/recommend">Recommend</a>
+        </div>
+    </nav>
+    <h1>Recommend Books</h1>
+    <div class="form-container">
+        <form action="/recommend" method="POST">
+            <label for="book-name" style="display: none;">Book Name</label>
+            <input type="text" id="book-name" name="book_name" placeholder="Enter a book name" required list="book-suggestions" value="{{ searched if searched else '' }}">
+            <datalist id="book-suggestions">
+                {% for book in books %}
+                <option value="{{ book }}">
+                {% endfor %}
+            </datalist>
+            <button type="submit">Get Recommendations</button>
+        </form>
+    </div>
+    <div class="recommendations">
+        {% if recommendations %}
+        <h2 style="text-align: center;">Recommended Books:</h2>
+        <div class="book-container">
+            {% for book in recommendations %}
+            <div class="book-card">
+                <img src="{{ book[2] }}" alt="{{ book[0] }}">
+                <div class="book-title">{{ book[0] }}</div>
+                <div class="book-author">by {{ book[1] }}</div>
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
+        <div class="no-recommendations">
+            <p>Search for a book above to get recommendations!</p>
+            <p>Try entering a book name to explore similar books.</p>
+        </div>
+
+        {% endif %}
+    </div>
+</body>
+
+</html>
