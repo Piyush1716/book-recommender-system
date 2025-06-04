@@ -1,0 +1,82 @@
+[
+  {
+    "Book-Title": "Harry Potter and the Prisoner of Azkaban (Book 3)",
+    "num_ratings": 428,
+    "Avg-Rating": 5.8528037383,
+    "Book-Author": "J. K. Rowling",
+    "Year-Of-Publication": 1999,
+    "Image-URL-L": "http:\\/\\/images.amazon.com\\/images\\/P\\/0439136350.01.LZZZZZZZ.jpg"
+  },
+  {
+    "Book-Title": "Harry Potter and the Goblet of Fire (Book 4)",
+    "num_ratings": 387,
+    "Avg-Rating": 5.8242894057,
+    "Book-Author": "J. K. Rowling",
+    "Year-Of-Publication": 2000,
+    "Image-URL-L": "http:\\/\\/images.amazon.com\\/images\\/P\\/0439139597.01.LZZZZZZZ.jpg"
+  },
+  {
+    "Book-Title": "Harry Potter and the Sorcerer\'s Stone (Book 1)",
+    "num_ratings": 278,
+    "Avg-Rating": 5.7374100719,
+    "Book-Author": "J. K. Rowling",
+    "Year-Of-Publication": 1998,
+    "Image-URL-L": "http:\\/\\/images.amazon.com\\/images\\/P\\/0590353403.01.LZZZZZZZ.jpg"
+  },
+  {
+    "Book-Title": "Harry Potter and the Order of the Phoenix (Book 5)",
+    "num_ratings": 347,
+    "Avg-Rating": 5.5014409222,
+    "Book-Author": "J. K. Rowling",
+    "Year-Of-Publication": 2003,
+    "Image-URL-L": "http:\\/\\/images.amazon.com\\/images\\/P\\/043935806X.01.LZZZZZZZ.jpg"
+  },
+  {
+    "Book-Title": "Harry Potter and the Chamber of Secrets (Book 2)",
+    "num_ratings": 556,
+    "Avg-Rating": 5.1834532374,
+    "Book-Author": "J. K. Rowling",
+    "Year-Of-Publication": 2000,
+    "Image-URL-L": "http:\\/\\/images.amazon.com\\/images\\/P\\/0439064872.01.LZZZZZZZ.jpg"
+  },
+  {
+    "Book-Title": "The Hobbit : The Enchanting Prelude to The Lord of the Rings",
+    "num_ratings": 281,
+    "Avg-Rating": 5.0071174377,
+    "Book-Author": "J.R.R. TOLKIEN",
+    "Year-Of-Publication": 1986,
+    "Image-URL-L": "http:\\/\\/images.amazon.com\\/images\\/P\\/0345339681.01.LZZZZZZZ.jpg"
+  },
+  {
+    "Book-Title": "The Fellowship of the Ring (The Lord of the Rings, Part 1)",
+    "num_ratings": 368,
+    "Avg-Rating": 4.9483695652,
+    "Book-Author": "J.R.R. TOLKIEN",
+    "Year-Of-Publication": 1986,
+    "Image-URL-L": "http:\\/\\/images.amazon.com\\/images\\/P\\/0345339703.01.LZZZZZZZ.jpg"
+  },
+  {
+    "Book-Title": "Harry Potter and the Sorcerer\'s Stone (Harry Potter (Paperback))",
+    "num_ratings": 575,
+    "Avg-Rating": 4.8956521739,
+    "Book-Author": "J. K. Rowling",
+    "Year-Of-Publication": 1999,
+    "Image-URL-L": "http:\\/\\/images.amazon.com\\/images\\/P\\/059035342X.01.LZZZZZZZ.jpg"
+  },
+  {
+    "Book-Title": "The Two Towers (The Lord of the Rings, Part 2)",
+    "num_ratings": 260,
+    "Avg-Rating": 4.8807692308,
+    "Book-Author": "J.R.R. TOLKIEN",
+    "Year-Of-Publication": 1986,
+    "Image-URL-L": "http:\\/\\/images.amazon.com\\/images\\/P\\/0345339711.01.LZZZZZZZ.jpg"
+  },
+  {
+    "Book-Title": "To Kill a Mockingbird",
+    "num_ratings": 510,
+    "Avg-Rating": 4.7,
+    "Book-Author": "Harper Lee",
+    "Year-Of-Publication": 1988,
+    "Image-URL-L": "http:\\/\\/images.amazon.com\\/images\\/P\\/0446310786.01.LZZZZZZZ.jpg"
+  }
+]
